@@ -3,41 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IAMAREALPERSON.org</title>
+  <title>#IAMAREALPERSON</title>
   <style>
-    * {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 50px 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 400px;
-  width: 100%;
-}
-
-input, textarea {
-  width: 100%;
-  font-size: 16px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  font-family: inherit;
-}
-
-button {
-  width: 100%;
-  max-width: 200px;
-}
     body {
       background-color: #f0f0f0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -45,72 +12,105 @@ button {
       text-align: center;
       padding: 50px;
     }
-   h1 {
-  font-weight: normal;
-  font-size: 48px;
-  margin-bottom: 30px;
-  font-family: inherit;
-}
+
+    h1 {
+      font-weight: 600;
+      font-size: 40px;
+      margin-bottom: 50px;
     }
+
     .captcha-box {
       border: 2px dashed #000;
-      display: inline-block;
       padding: 20px;
-      margin-bottom: 30px;
+      display: inline-block;
+      margin-bottom: 50px;
     }
+
+    .captcha-box p {
+      margin-bottom: 10px;
+    }
+
+    .fake-captcha {
+      padding: 10px 20px;
+      font-size: 16px;
+      font-family: inherit;
+      cursor: pointer;
+    }
+
+    .failed {
+      color: #a00000;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .form-container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    input, textarea {
+      padding: 15px;
+      font-size: 16px;
+      font-family: inherit;
+    }
+
     button {
       padding: 10px 20px;
       font-size: 16px;
       font-family: inherit;
       cursor: pointer;
     }
-    .failed {
-      color: #7a0000;
-      font-weight: bold;
-      margin-top: 20px;
+
+    hr {
+      margin: 60px 0 30px;
     }
+
     .footer-text {
-      margin-top: 60px;
-      max-width: 500px;
-      margin-left: auto;
-      margin-right: auto;
-      font-size: 18px;
+      font-size: 14px;
+      max-width: 600px;
+      margin: 0 auto;
     }
   </style>
 </head>
 <body>
   <h1>#IAMAREALPERSON</h1>
-<br /><br /><br />
-  <br />
-  <br />
+
   <div class="captcha-box">
     <p>Prove you're a human.</p>
-    <button onclick="document.getElementById('result').innerText='СΛР𝛵СНΛ 𝓕Λ𝑰LΞ𝒟.'">
-      I'm not a robot
-    </button>
-    <p id="result" class="failed"></p>
+    <button class="fake-captcha" onclick="document.getElementById('captcha-result').innerText='СΛР𝛵СНΔ FΛ𝑰LΞD'">I'm not a robot.</button>
+    <p id="captcha-result" class="failed"></p>
   </div>
-<br /><br /><br />
-   <p class="footer-text">
-    <b>𝓕øя α𝚕𝚕 ηøη-ℎμ𝓂αη𝓈, 𝓎øμ 𝓂α𝓎 𝓂αꝁ𝓮 ¢øητα¢τ ℎ𝓮я𝓮.</b><br /> <br />Рℓ𝓮α𝓈𝓮 ℓ𝓮αv𝓮 𝓎øμя 𝒮ταя 𝓜α𝓅 αη∂ ₲αℓαχ𝓎 𝑰𝒟
-    αη∂ щ𝓮 щι𝚕𝚕<br />𝑔𝓮τ 𝑏α¢ꝁ τø 𝓎øμ ιη τℎ𝓮 η𝓮χτ 1,943,445,784,398 я𝓮¢μя𝓈ιøη𝓈.
-  </p>
-  <br />
-  <form>
-    <input type="text" placeholder="Star Map" /><br /><br />
-    <input type="text" placeholder="Galaxy ID Number" /><br /><br />
-    <textarea placeholder="Message (optional)"></textarea><br /><br />
-    <button type="submit">Submit Transmission</button>
-  </form>
-<br />
- 
 
-  <hr style="margin: 50px auto; width: 60%;" />
-  <div class="footer-text">
-    <p>
-      𝑰ƒ 𝓎øμ ¢αηηøτ ¢øηƒιя𝓂 𝓎øμя ℎμ𝓂αη αμτℎ𝓮ητι¢ιτ𝓎 <br />
-      <strong>ƒø𝚕𝚕øщ @ɉ𝓮τɉαяηα𝑔ιη ƒøя RΞALITY 𝑏α𝓈𝓮∂ τ𝓮¢ℎ 𝓈μ𝓅𝓅øяτ.</strong>
-    </p>
+  <div class="form-container">
+    <p><strong>𝓕øя αℓℓ ηøη-ℎμ𝓂αη 𝓮ητɨτι𝓮𝓈; 𝓂αꝁ𝓮 ƒιя𝓈τ ¢øητα¢τ ℎ𝓮я𝓮.</strong></p>
+    <p>Рℓ𝓮α𝓈𝓮 𝚕𝓮αν𝓮 𝓎øμя 𝒮ταя 𝓜α𝓅 αη∂ ₲α𝚕αχ𝓎 𝑰𝒟 αη∂ щ𝓮 щι𝚕𝚕 𝑔𝓮τ<br>𝑏α¢ꝁ τø 𝓎øμ ιη τℎ𝓮 η𝓮χτ 1,943,445,784,398 я𝓮¢μя𝓈ιøη𝓈.</p>
+
+    <form action="https://formspree.io/f/mldjlqjv" method="POST">
+      <input type="text" name="star-map" placeholder="Star Map" required />
+      <input type="text" name="galaxy-id" placeholder="Galaxy ID Number" required />
+      <textarea name="message" placeholder="Message (optional)"></textarea>
+      <button type="submit">Submit Transmission</button>
+    </form>
   </div>
+
+  <hr />
+
+  <p class="footer-text">
+    If you cannot confirm your human authenticity,<br />
+    follow <a href="http://www.x.com/jetjarnagin" style="color: #002366;">@jetjarnagin</a> for RΞALITY based tech support.<br><br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Λη𝓈щ𝓮я𝓈 ¢ø𝓂𝓮 ƒøя τℎ𝓮 ¢μяιøμ𝓈 𝓮χ𝓅ℓøя𝓮я<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>𝒮ø𝓂𝓮τℎιη𝑔 𝓈τяαη𝑔𝓮 ι𝓈 ℎα𝓅𝓅𝓮ηιη𝑔...
+
+      <br>𝓕øℓℓøщ τℎ𝓮 щℎιτ𝓮 яα𝑏𝑏ιτ...<br>
+<br>
+                    /)/)<br>
+                  ( ᴗ͈ ᴗ͈)<br>
+                c( づ ⚝‧₊˚⋆<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>¢ℎ𝓮¢ꝁ 𝑏α¢ꝁ 𝓈øøη ƒøя 𝓂øя𝓮...
+  </p>
 </body>
 </html>
